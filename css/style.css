@@ -392,45 +392,8 @@
     }
 }
 
-.menuToggle {
-    display: none;
-    position: absolute;
-    top: 22px;
-    right: 15px;
-    cursor: pointer;
-}
-
 @media(max-width:1080px) {
     #laptop {
-        display: none;
-    }
-    .main-nav {
-        display: none;
-        position: absolute;
-        background-color: rgba(38, 59, 86, 0.8);
-        top: 64px;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-    .main-nav_link {
-        display: block;
-        color: #fff;
-        font-weight: normal;
-        margin: 0;
-        padding: 18px 0;
-        background-color: rgba(26, 26, 32, 0.7);
-    }
-    .menuToggle {
-        display: block;
-        z-index: 100;
-    }
-    .main-nav_link:hover {
-        background-color: #1a1a20;
-        color: #ffaa91;
-    }
-    .main-nav_link::after,
-    .active::after {
         display: none;
     }
     html {
