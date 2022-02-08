@@ -422,90 +422,104 @@
     }
     #head {
         display: grid;
-        grid-template-columns: 2fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 2fr;
         height: 100px;
     }
     #logoImage {
         width: 100%;
     }
-    .menu-btn {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 14px;
-        right: 30px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    .menu-btn>span,
-    .menu-btn>span::before,
-    .menu-btn>span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #616161;
-        transition-duration: .25s;
-    }
-    .menu-btn>span::before {
-        content: '';
-        top: -8px;
-    }
-    .menu-btn>span::after {
-        content: '';
-        top: 8px;
-    }
-    .menubox {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: -100%;
-        width: 200px;
-        height: 100%;
+    body {
+        background-color: #f9f9f9;
         margin: 0;
-        padding: 40px 0;
-        list-style: none;
-        background-color: #00aeda;
-        box-shadow: 1px 0px 6px rgba(2, 92, 226, 0.836);
-        transition-duration: .25s;
-        font-size: 24px;
+        padding: 0;
     }
-    .menu-item {
-        display: block;
-        padding: 12px 24px;
-        color: rgb(12, 11, 11);
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
+    a {
         text-decoration: none;
-        transition-duration: .25s;
+        color: #1E1E23;
+        opacity: 1;
+        font-family: 'work sans', sans serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        transition: 200ms;
     }
-    .menu-item:hover {
-        background-color: #CFD8DC;
+    a:hover {
+        opacity: 0.5;
     }
-    #menu-toggle {
+    #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle input {
+        display: flex;
+        top: -10px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
         opacity: 0;
+        z-index: 2;
     }
-    #menu-toggle:checked~.menu-btn>span {
-        transform: rotate(45deg);
+    #menuToggle span {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #000288;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
     }
-    #menu-toggle:checked~.menu-btn>span::before {
-        top: 0;
-        transform: rotate(0);
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
     }
-    #menu-toggle:checked~.menu-btn>span::after {
-        top: 0;
-        transform: rotate(90deg);
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
     }
-    #menu-toggle:checked~.menubox {
-        visibility: visible;
-        left: 0;
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
     }
-    li {
-        color: rgb(4, 0, 5);
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menu {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        position: absolute;
+        width: 180px;
+        height: 400px;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background-color: #2dfff5;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    #menu a {
+        color: #000000;
+    }
+    #menu li {
+        padding: 10px 0;
+        transition-delay: 2s;
+    }
+    #menuToggle input:checked~ul {
+        transform: none;
     }
     .wrapper {
         background: #5DF6C5;
