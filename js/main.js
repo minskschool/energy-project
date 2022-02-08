@@ -5,14 +5,14 @@ $(window).load(function() {
 
 $(function() {
 
-    $('.menuToggle').on('click', function() {
-        $('.main-nav').slideToggle(500, function() {
+    $('#menu-toggle').on('click', function() {
+        $('.menubox').slideToggle(500, function() {
             if ($(this).css('display') === 'none') {
                 $(this).removeAttr('style');
             }
         });
-        $('.main-nav__link').on('click', function() {
-            $('.main-nav').hide(100, function() {
+        $('.one').on('click', function() {
+            $('.menubox').hide(100, function() {
                 if ($(this).css('display') === 'none') {
                     $(this).removeAttr('style');
                 }
