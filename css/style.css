@@ -392,6 +392,14 @@
     }
 }
 
+.menuToggle {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    cursor: pointer;
+}
+
 @media(max-width:1080px) {
     #laptop {
         display: none;
