@@ -396,6 +396,36 @@
     #laptop {
         display: none;
     }
+    .main-nav {
+        display: none;
+        position: absolute;
+        background-color: rgba(38, 59, 86, 0.8);
+        top: 64px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .main-nav__link {
+        display: block;
+        color: #fff;
+        font-weight: normal;
+        margin: 0;
+        padding: 18px 0;
+        background-color: rgba(26, 26, 32, 0.7);
+        ;
+    }
+    .menuToggle {
+        display: block;
+        z-index: 100;
+    }
+    .main-nav__link:hover {
+        background-color: #1a1a20;
+        color: #ffaa91;
+    }
+    .main-nav__link::after,
+    .active::after {
+        display: none;
+    }
     html {
         scroll-behavior: smooth;
         display: block;
