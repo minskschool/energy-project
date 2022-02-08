@@ -3,22 +3,33 @@ $(window).load(function() {
 });
 
 
-$(function() {
+let burger = document.getElementById('burger'),
+    nav = document.getElementById('main-nav'),
+    slowmo = document.getElementById('slowmo');
 
-    $('#menu-toggle').on('click', function() {
-        $('.menubox').slideToggle(500, function() {
-            if ($(this).css('display') === 'none') {
-                $(this).removeAttr('style');
-            }
-        });
-        $('.one').on('click', function() {
-            $('.menubox').hide(100, function() {
-                if ($(this).css('display') === 'none') {
-                    $(this).removeAttr('style');
-                }
-            });
-        });
-    });
+burger.addEventListener('click', function(e) {
+    this.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
+});
+
+slowmo.addEventListener('click', function(e) {
+    this.classList.toggle('is-slowmo');
+});
+
+/* Onload demo - dirty timeout */
+let clickEvent = new Event('click');
+
+window.addEventListener('load', function(e) {
+    slowmo.dispatchEvent(clickEvent);
+    burger.dispatchEvent(clickEvent);
+
+    setTimeout(function() {
+        burger.dispatchEvent(clickEvent);
+
+        setTimeout(function() {
+            slowmo.dispatchEvent(clickEvent);
+        }, 3500);
+    }, 5500);
 });
 
 /******************************************************************************************************************************
