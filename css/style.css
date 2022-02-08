@@ -405,24 +405,23 @@
         right: 0;
         text-align: center;
     }
-    .main-nav__link {
+    .main-nav_link {
         display: block;
         color: #fff;
         font-weight: normal;
         margin: 0;
         padding: 18px 0;
         background-color: rgba(26, 26, 32, 0.7);
-        ;
     }
     .menuToggle {
         display: block;
         z-index: 100;
     }
-    .main-nav__link:hover {
+    .main-nav_link:hover {
         background-color: #1a1a20;
         color: #ffaa91;
     }
-    .main-nav__link::after,
+    .main-nav_link::after,
     .active::after {
         display: none;
     }
