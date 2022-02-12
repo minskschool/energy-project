@@ -1,0 +1,163 @@
+@media(min-width:1080px) {
+    #mobile {
+        display: none;
+    }
+    .information {
+        display: grid;
+        grid-area: "c v";
+        grid-template-columns: 3fr 1fr;
+    }
+    .video {
+        margin-top: 130px;
+        padding-right: 30px;
+        grid: v;
+    }
+    html {
+        scroll-behavior: smooth;
+        display: block;
+        height: max-content;
+        font-family: sans-serif;
+        min-width: 1200px;
+        max-width: 1650px;
+        height: max-content;
+    }
+    body {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(37,768,369)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='443' height='369.2' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.07'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .wrapper {
+        background: #5DF6C5;
+        background: -webkit-radial-gradient(top left, #5DF6C5, #8BD6FF);
+        background: -moz-radial-gradient(top left, #5DF6C5, #8BD6FF);
+        background: radial-gradient(to bottom right, #5DF6C5, #8BD6FF);
+        height: max-content;
+    }
+    .headers {
+        height: 60px;
+        border-radius: 10px;
+        line-height: 60px;
+        height: max-content;
+        text-align: center;
+    }
+    .headers .links {
+        right: 0;
+    }
+    .headers h1 {
+        font-size: 80px;
+        letter-spacing: -8px;
+        margin: 0;
+        font-weight: 600;
+        line-height: 95px;
+        text-transform: uppercase;
+    }
+    .lineh2::after {
+        content: " ";
+        display: block;
+        width: 1000px;
+        margin: 30px auto;
+    }
+    .links .one {
+        text-transform: uppercase;
+        color: rgb(0, 45, 128);
+        font-size: 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-decoration: none;
+    }
+    .links .one:hover {
+        color: rgba(44, 59, 197, 0.788);
+        cursor: pointer;
+    }
+    .blog {
+        margin-top: 100px;
+        float: left;
+        line-height: 25px;
+        padding-left: 30px;
+        grid: c;
+        text-align: justify;
+        padding-right: 30px;
+    }
+    .blog h2 {
+        text-align: center;
+    }
+    .sitename {
+        color: rgb(3, 36, 99);
+        font-size: 38px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: 5px;
+        position: absolute;
+        padding-left: 160px;
+    }
+    #totop {
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+        background-color: #01a2adc9;
+        padding: 10px 13px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    #main {
+        padding-top: 20px;
+        height: auto;
+        color: #0a0606;
+        line-height: 20px;
+    }
+    .text-wrapper {
+        margin: 0 100px 0 100px;
+    }
+    #contacts {
+        height: max-content;
+        color: #000000;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    h1.arrow {
+        background: url('../img/h1-bg.png') no-repeat center bottom;
+        text-transform: uppercase;
+        color: #353535;
+        letter-spacing: 4px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    h2 {
+        letter-spacing: 5px;
+        font-size: 1.5em;
+        margin: 0.83em 0;
+    }
+    h2::after {
+        content: " ";
+        border: solid 1px #181717;
+        display: block;
+        width: 150px;
+        margin: 20px auto;
+    }
+    .footerItem {
+        height: 140px;
+        background-color: rgba(0, 0, 0, 0.76);
+        border-radius: 10px;
+        text-align: center;
+        line-height: 140px;
+    }
+    .mainFoot {
+        text-decoration: none;
+        margin-right: 50px;
+        margin-left: 50px;
+        color: rgb(224, 224, 224);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: 3px;
+        grid-area: f;
+    }
+    .mainFoot:hover {
+        color: rgb(202, 203, 206);
+    }
+}
