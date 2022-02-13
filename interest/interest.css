@@ -203,10 +203,9 @@
         height: max-content;
     }
     .headers {
-        height: 60px;
+        height: 40px;
         border-radius: 10px;
-        line-height: 60px;
-        height: max-content;
+        line-height: 40px;
         text-align: center;
     }
     .headers h1 {
